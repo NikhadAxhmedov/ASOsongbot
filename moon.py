@@ -46,22 +46,22 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "♬ Werab Qadın 🍷", 
+                        "♬ ᴘʟᴀʏʟɪ̇sᴛ", 
                         url=f"https://t.me/{Config.PLAYLIST_NAME}"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📚 Menyular" , callback_data= "cbbilgi"
+                        "📚 əᴍʀʟəʀ" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "💭 Werab Qoxulu ✈️",
+                        "🎡 ɴᴀᴛʜᴀɴɪ̇ᴇʟ",
                         url=f"https://t.me/WerabliAnlar"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "👨‍💻 Owner",
+                        "👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ",
                         url=f"https://t.me/{Config.BOT_OWNER}"
                     )
                     
@@ -97,22 +97,22 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "♬ Werab Qadın🍷", 
+                        "♬ ᴘʟᴀʏʟɪ̇sᴛ", 
                         url=f"https://t.me/{Config.PLAYLIST_NAME}"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📚 Menyular" , callback_data= "cbbilgi"
+                        "📚 əᴍʀʟəʀ" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "💭 Werab Qoxulu 🍷",
-                        url=f"https://t.me/WerabliAnlar"
+                        "🎡 ɴᴀᴛʜᴀɴɪ̇ᴇʟ",
+                        url=f"https://t.me/Naathaniel"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "👨‍💻 Owner",
+                        "👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ",
                         url=f"https://t.me/{Config.BOT_OWNER}"
                     )
                     
@@ -149,7 +149,7 @@ def song(_, message):
         duration = results[0]["duration"]
 
     except Exception as e:
-        m.edit("<b>❌ Elə pis oldum ele pis oldum 😔 mahnı tapılmadı.\n\n Zəhmət Olmasa başqa mahnı adı deyin @WerabliAnlar 🍷.</b>")
+        m.edit("<b>❌ Elə pis oldum ele pis oldum 😔 mahnı tapılmadı.\n\n Zəhmət Olmasa başqa mahnı adı deyin @Naathaniel 🎡.</b>")
         print(str(e))
         return
     m.edit("<b>📥 Yükləmə İşlemi Başladı...</b>")
@@ -167,7 +167,7 @@ def song(_, message):
         m.edit("📤 Yüklenir..")
         message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumb_name, performer="@ismiyev95")
         m.delete()
-        bot.send_audio(chat_id=Config.PLAYLIST_ID, audio=audio_file, caption=res, performer="@ismiyev95", parse_mode='md', title=title, duration=dur, thumb=thumb_name)
+        bot.send_audio(chat_id=Config.PLAYLIST_ID, audio=audio_file, caption=res, performer="@Nixhadj", parse_mode='md', title=title, duration=dur, thumb=thumb_name)
     except Exception as e:
         m.edit("<link Xətanın, düzelmesini gözləyin.</b>")
         print(e)
