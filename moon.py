@@ -46,17 +46,17 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "♬ ᴘʟᴀʏʟɪ̇sᴛ", 
+                        "ᴘʟᴀʏ ʟɪ̇sᴛ🌴", 
                         url=f"https://t.me/{Config.PLAYLIST_NAME}"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📚 əᴍʀʟəʀ" , callback_data= "cbbilgi"
+                        "əᴍʀʟəʀ 🔧" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "🎡 ɴᴀᴛʜᴀɴɪ̇ᴇʟ",
-                        url=f"https://t.me/WerabliAnlar"
+                        "ʙʟᴏɢ 🎡",
+                        url=f"https://t.me/Naathaniel"
                     )
                 ],
                 [
@@ -97,16 +97,16 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "♬ ᴘʟᴀʏʟɪ̇sᴛ", 
+                        "ᴘʟᴀʏ ʟɪ̇sᴛ🌴", 
                         url=f"https://t.me/{Config.PLAYLIST_NAME}"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📚 əᴍʀʟəʀ" , callback_data= "cbbilgi"
+                        "əᴍʀʟəʀ 🔧" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "🎡 ɴᴀᴛʜᴀɴɪ̇ᴇʟ",
+                        "ʙʟᴏɢ 🎡",
                         url=f"https://t.me/Naathaniel"
                     )
                 ],
