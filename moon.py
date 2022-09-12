@@ -37,7 +37,7 @@ bot = Client(
 async def start_(client: Client, message: Message):
     await message.reply_sticker("CAACAgIAAxkBAAJAhWLeod8v1WIFu0_xulGE8dxkW7StAAJ6AQACEBptIpydt0hO73LeKQQ")
     await message.reply_text(
-        f"""**Salam {message.from_user.mention} 🎵\nMən mahnı yükləmə botuyum !\n
+        f"""**sᴀʟᴀᴍ {message.from_user.mention} 🎵\nMən mahnı yükləmə botuyum !\n
 ɴɪ‌xʜᴀᴅ xɪ‌ᴅᴍəᴛɪ‌ɴɪ‌ᴢᴅəᴅɪ‌ʀ...⚡️ᴛᴇʟᴇɢʀᴀᴍ üᴢəʀɪ‌ɴᴅəɴ ʏᴏᴜᴛᴜʙᴇ ᴍᴜsɪ‌ǫɪ‌ʟəʀɪ‌ɴɪ‌ ʏüᴋʟəᴍəᴋ ᴠə ᴅɪ‌ɴʟəᴍəᴋ üçüɴ ʙᴏᴛ ⚡️
 \şɪ‌ᴋᴀʏəᴛ & ʀᴇᴋʟᴀᴍ ᴛəᴋʟɪ‌ғʟəʀɪ‌ɴɪ‌ᴢɪ‌ ᴅᴇᴠᴇʟᴏᴘᴇʀə ʙɪ‌ʟᴅɪ‌ʀə ʙɪ‌ʟəʀsɪ‌ɴɪ‌ᴢ...
 
@@ -54,7 +54,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "əᴍʀʟəʀ 🔧" , callback_data= "cbbilgi"
+                        "ᴋöᴍəᴋ 🔧" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
                         "ʙʟᴏɢ 🎡",
