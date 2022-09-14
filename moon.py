@@ -67,14 +67,16 @@ async def start_(client: Client, message: Message):
                         url=f"https://t.me/{Config.BOT_OWNER}"
                     )
                     
-                ]
+                ],
+                [
+                    InlineKeyboardButton(
+                        "ᴍᴜsɪ̇ᴄ ʙᴏᴛ 🇦🇿",
+                        url=f"https://t.me/NathanielMusicBot"
                 
            ]
         ), 
     ) 
-    
-
-
+ 
 
 @bot.on_callback_query(filters.regex("cbbilgi"))
 async def cbbilgi(_, query: CallbackQuery):
@@ -118,7 +120,11 @@ async def cbstart(_, query: CallbackQuery):
                         url=f"https://t.me/{Config.BOT_OWNER}"
                     )
                     
-                ]
+                ],
+                [ 
+                  InlineKeyboardButton(
+                        "ᴍᴜsɪ̇ᴄ ʙᴏᴛ 🇦🇿",
+                        url=f"https://t.me/NathanielMusicBot"
                 
            ]
         ), 
@@ -134,7 +140,6 @@ async def live(client: Client, message: Message):
 
   
 #mahnı yükləmə#
-
 @bot.on_message(filters.command("song") & ~filters.edited)
 def song(_, message):
     query = " ".join(message.command[1:])
