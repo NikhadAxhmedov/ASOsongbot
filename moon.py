@@ -58,7 +58,7 @@ async def start_(client: Client, message: Message):
                     ),
                     InlineKeyboardButton(
                         "ʙʟᴏɢ 🎡",
-                        url=f"https://t.me/Naathaniel"
+                        url=f"https://t.me/Nixhadx"
                     )
                 ],
                 [
@@ -69,9 +69,7 @@ async def start_(client: Client, message: Message):
                     
                 ],
                 [
-                    InlineKeyboardButton(
-                        "ᴍᴜsɪ̇ᴄ ʙᴏᴛ 🇦🇿",
-                        url=f"https://t.me/NathanielMusicBot"
+                    InlineKeyboardButton("➕ Botu Qrupa Əlavə Et", url=f"http://t.me/PoseidonSongRobot?startgroup=new")
                 
            ]
         ), 
@@ -80,7 +78,7 @@ async def start_(client: Client, message: Message):
 
 @bot.on_callback_query(filters.regex("cbbilgi"))
 async def cbbilgi(_, query: CallbackQuery):
-    await query.edit_message_text(f"""<b>Selam {query.from_user.mention}!\nBu botun menyusu 💝\n\n ● /song - Mahnı adı ve ya YouTube linki (mahnı yükləmə)\n\n● /lyrics - Mahnı adı (mahnı sözleri)\n\n● /vsong - Video adı ve ya YouTube linki (video yükləmə)\n\n</b>""",
+    await query.edit_message_text(f"""<b>Selam {query.from_user.mention}!\nBu botun menyusu ⚡\n\n ● /song - Mahnı adı ve ya YouTube linki (mahnı yükləmə)\n\n● /lyrics - Mahnı adı (mahnı sözleri)\n\n● /vsong - Video adı ve ya YouTube linki (video yükləmə)\n\n</b>""",
     reply_markup=InlineKeyboardMarkup(
              [
                  [
@@ -111,7 +109,7 @@ async def cbstart(_, query: CallbackQuery):
                     ),
                     InlineKeyboardButton(
                         "ʙʟᴏɢ 🎡",
-                        url=f"https://t.me/Naathaniel"
+                        url=f"https://t.me/Nixhadx"
                     )
                 ],
                 [
@@ -122,9 +120,7 @@ async def cbstart(_, query: CallbackQuery):
                     
                 ],
                 [ 
-                  InlineKeyboardButton(
-                        "ᴍᴜsɪ̇ᴄ ʙᴏᴛ 🇦🇿",
-                        url=f"https://t.me/NathanielMusicBot"
+                  InlineKeyboardButton("➕ Botu Qrupa Əlavə Et", url=f"http://t.me/PoseidonSongRobot?startgroup=new")
                 
            ]
         ), 
@@ -156,7 +152,7 @@ def song(_, message):
         duration = results[0]["duration"]
 
     except Exception as e:
-        m.edit("<b>❌ Elə pis oldum ele pis oldum 😔 mahnı tapılmadı.\n\n Zəhmət Olmasa başqa mahnı adı deyin @Naathaniel 🎡.</b>")
+        m.edit("<b>❌ Elə pis oldum ele pis oldum 😔 mahnı tapılmadı.\n\n Zəhmət Olmasa başqa mahnı adı deyin ᴘᴏsᴇɪ̇ᴅᴏɴ 🎡.</b>")
         print(str(e))
         return
     m.edit("<b>📥 Yükləmə İşlemi Başladı...</b>")
@@ -174,7 +170,7 @@ def song(_, message):
         m.edit("📤 Yüklenir..")
         message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumb_name, performer="Naathaniel")
         m.delete()
-        bot.send_audio(chat_id=Config.PLAYLIST_ID, audio=audio_file, caption=res, performer="@Nixhadj", parse_mode='md', title=title, duration=dur, thumb=thumb_name)
+        bot.send_audio(chat_id=Config.PLAYLIST_ID, audio=audio_file, caption=res, performer="ᴘᴏsᴇɪ̇ᴅᴏɴ", parse_mode='md', title=title, duration=dur, thumb=thumb_name)
     except Exception as e:
         m.edit("<link Xətanın, düzelmesini gözləyin.</b>")
         print(e)
