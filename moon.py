@@ -71,8 +71,7 @@ async def start_(client: Client, message: Message):
                 [
                     InlineKeyboardButton("➕ Botu Qrupa Əlavə Et", url=f"http://t.me/PoseidonSongRobot?startgroup=new")
                 
-           ]
-        ) 
+           [
     ) 
  
 
@@ -123,7 +122,6 @@ async def cbstart(_, query: CallbackQuery):
                   InlineKeyboardButton("➕ Botu Qrupa Əlavə Et", url=f"http://t.me/PoseidonSongRobot?startgroup=new")
                 
            ]
-        ) 
     ) 
 
 #alive mesaji#
